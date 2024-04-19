@@ -1,0 +1,77 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/*---Reset___styles---*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*---Gellery---*/
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1128px;
+    width: 100%;
+    gap: 24px;
+}
+
+.gallery-item {
+    cursor: pointer;
+}
+
+.gallery-image {
+    display: block;
+    width: 360px;
+    height: 200px;
+    cursor: pointer;
+}
+
+.img-popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(46, 47, 66, 0.8); /* Задній фон з прозорістю */
+}
+
+.img-popup img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain; /* Зберігає пропорції картинки */
+}
